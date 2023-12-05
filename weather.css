@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Fredoka:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka';
+}
+body{
+    background: #333;
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: radial-gradient(#e3e3e3, #104c96)  ;
+    box-shadow: 0 8px 32px 0 rgba(199, 200, 208, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto 0;
+    padding: 40px 35px;
+}
+.search{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.search .searchTerm{
+    width: 100%;
+    padding: 8px;
+    background-color: #ebfffc;
+    outline: none;
+    border: none;
+    flex: 1;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+}
+.search .searchTerm:focus {
+    box-shadow: 0 0 10px #eee;
+}
+.search button{
+    padding: 3.5px;
+    background-color: #ebfffc;
+    outline: none;
+    border: none;
+    border-left: 1px solid #999;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+}
+.search button:hover {
+    background-color: #ebfffc;
+    border: 1px solid #999;
+}
+.search .fa-search{
+    color: cadetblue;
+    font-size: 25px;
+    background-color: transparent;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: -10px
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.col{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.col p{
+    color: #fff;
+
+}
+
+.humidity, .wind{
+    font-size: 21px;
+    color: #fff;  
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #444;
+    display: none;
+}
+
+
+
